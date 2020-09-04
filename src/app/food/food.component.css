@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url("src/assets/bk.jfif");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width:100%;
+    height:660px;
+
+}
+.card:focus[img]{
+    width:70vh;
+    border-color:#2ecc71;
+
+}
+.card-body h4{
+    color:red;
+    background:1 px solid salmon;
+}
+.card-body p{
+    color:purple;
+    font-weight: bold;
+}
+#d:focus{
+    border-color:#2ecc71;
+   width:50vw;
+}
+.inner{
+    overflow:hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{transform: scale(1.5);
+
+}

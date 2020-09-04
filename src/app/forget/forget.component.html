@@ -1,0 +1,57 @@
+<div class="container-fluid bg">
+        <div class="row text-light justify-content-center align-items-center  bg-danger sticky-top"
+            style="height: 8vh; font-weight: bold;">
+            <div class="col-4 justify-content-center  d-flex " style="font-size: 20px;">
+                The Knot</div>
+            <div class=" col-4 d-flex "></div>
+            <div class=" col-2 d-flex justify-content-end head"><a  routerLink="/HomePage" >Home</a></div>
+            <div class=" col-2 d-flex ">
+                <a routerLink="/SignupPage" target="_blank" style="text-decoration:none;color: #f4f4f4; ">SignUp</a>
+
+            </div>
+        </div>
+
+        <div class="row " style="height: 84vh;">
+            <div class="col-2" style="background:#f4f4f4;"></div>
+            <div class="col-12 col-md-8 ">
+                <div class="row" style="height: 84vh;">
+                  <div class="col-12 col-md-6  text-dark d-flex justify-content-center align-items-center " style="font-size: 30px;text-align: center; ; font-weight: bold;background:url(./img/1.jpg) center no-repeat ;background-size: cover;
+                      ">
+                      <div>You:Plan My Wedding.<br>The Knot:No Problem.</div>
+
+                  </div>
+                  
+            <form class="form-container" [formGroup]="fbFormGroup">
+                <div class="form-group">
+                  <div class="col  d-flex flex-column  justify-content-center align-items-center"
+                                style="font-size: 30px;margin-top: 40px;">Forget Password</div>
+                  <br><br><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" formControlName="email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1"></label>
+                 <br><br> <input type="Mobile Number" class="form-control" id="exampleInputPassword1" placeholder="Mobile Number" formControlName="mobile">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1"></label>
+                </div>
+                
+                <div class="form-group">
+                  <label for="exampleInputPassword1"></label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Changed Password" formControlName="Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1"></label>
+                </div>
+                
+               <br><button type="submit" class="btn btn-danger btn-block" (click)="update()">Submit</button>
+            </form>
+
+                </div>
+            </div>
+            <div class="col-2" style="background:#f4f4f4;"></div>
+        </div>
+        <div class="row bg-danger justify-content-center align-items-center text-light" style="height: 8vh;">
+            The Knot @2020, All Right Reserved
+        </div>
+
+</div>

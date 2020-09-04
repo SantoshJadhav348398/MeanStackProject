@@ -1,0 +1,72 @@
+<div class = "container-fluid bg">
+  <div class="row text-light justify-content-center align-items-center  bg-danger sticky-top"
+        style="height: 8vh; font-weight: bold;">
+        <div class="col-4 justify-content-center  d-flex " style="font-size: 20px;">
+          The Knot</div>
+          <div class=" col-4 d-flex "></div>
+          <div class=" col-2 d-flex justify-content-end "><a routerLink="/HomePage" routerLinkActive="active">Home</a></div>
+          <div class=" col-2 d-flex ">
+          </div>
+      </div>
+    <div class="signup-form" >
+        <form method="post" [formGroup]="fbFormGroup">
+            <h2>Sign Up</h2>
+            <p>Please fill to create an account!</p>
+            <hr>
+            <div class="err-msg">
+                <span id="str-expect">
+                    Entered value must be alphabets
+                </span>
+
+                <span id="val-expect">
+                    number value expected/ phone number cannot be greater than 10
+                </span>
+
+                <span id="email-expect">
+                    invalid email
+                </span>
+
+                <span id="pass-expect">
+                    must contain atleast one capital, small aphabets, special characters, digit.
+                </span>
+                <span id="match-expect">
+                    enterd password does not match with re-entered password
+                </span>
+
+            </div>
+
+            <div class="form-group" >
+
+                <div class="row ">
+                    <div class="col"><input formControlName="FirstName" type="text" id="usr-f-name" class="form-control" name="first_name"
+                            placeholder="First Name" required="required"></div>
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <input formControlName="email" type="email" id="usr-email" class="form-control" name="email" placeholder="Email" required="@">
+            </div>
+            <div class="form-group">
+                <input formControlName="mobile" type="Mobile" id="usr-contact" class="form-control" name="Mobile" placeholder="Mobile"
+                    required="required">
+            </div>
+            <div class="form-group">
+                <input formControlName="Password" type="password" id="usr-password" class="form-control" name="password" placeholder="password"
+                    required="@">
+            </div>
+            <div class="form-group">
+                </div>
+            <div class="form-group">
+                <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a
+                        href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+                <button type="submit" [disabled]="!fbFormGroup.valid" (click)="registerProcess()" class="btn btn-primary btn-lg btn-block">Sign Up</button>
+            </div>
+            <div > {{fbFormGroup.value | json}} </div>
+
+        </form>
+        <div class="hint-text" style="color: black; text-align: center;">Already have an account? <a
+                routerLink="/LoginPage" style="color: black;">Login here</a></div>
+    </div>
+</div>    

@@ -1,0 +1,61 @@
+.bg{
+	background:url('src/assets/fr.jpeg') no-repeat;background-size:cover;height: 100vh;
+}
+.form-control {
+	height: 35px;
+	/* background: transparent'; */
+	/* border: none; */
+}
+.form-control:focus {
+	background: whitesmoke;
+}
+.form-control, .btn {        
+	border-radius: 4px;
+}
+.signup-form {
+	width: 400px;
+	margin: 30px auto;
+}
+.signup-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+	padding: 30px;
+}
+.signup-form h2  {
+	color: black;
+	font-weight: initial;
+	margin-top: 0;
+}
+.signup-form hr  {
+	margin: 0 -30px 20px;
+}    
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+
+.signup-form .btn:hover, .signup-form .btn:focus {
+	background: #2389cd !important;
+	outline: none;
+}
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #3598dc;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+
+ .err-msg span{
+	display: none;
+	color: rgb(241, 60, 60);
+}

@@ -1,0 +1,22 @@
+.inner{
+    overflow:hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{transform: scale(1.5);
+
+}
+.footer{
+    height:50px;
+}
+.footer h6{
+    line-height:50px;
+}
+
+.footer{
+    height:50px;
+}
+.footer h6{
+    line-height:50px;
+}
